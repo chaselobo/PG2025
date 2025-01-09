@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHS PG Newsletter Archive</title>
+    <style>
+        :root {
+            --maroon: #800000;
+            --grey: #666666;
+            --light-grey: #f4f4f4;
+            --black: #000000;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--light-grey);
+        }
+
+        .header {
+            background-color: var(--maroon);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .newsletter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .newsletter-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .newsletter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .card-header {
+            background-color: var(--maroon);
+            color: white;
+            padding: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .date {
+            color: var(--grey);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .highlights {
+            margin: 1rem 0;
+        }
+
+        .highlights ul {
+            margin-left: 1.5rem;
+            color: var(--grey);
+        }
+
+        .read-more {
+            display: inline-block;
+            background-color: var(--maroon);
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: #600000;
+        }
+
+        .archive-info {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .newsletter-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>RHS Project Graduation 2025</h1>
+        <p>Newsletter Archive</p>
+    </div>
+
+    <div class="container">
+        <div class="archive-info">
+            <h2 style="color: var(--maroon);">Welcome to the Newsletter Archive</h2>
+            <p>Access all Project Graduation newsletters in one place. Latest updates appear first.</p>
+        </div>
+
+        <div class="newsletter-grid">
+            <div class="newsletter-card">
+                <div class="card-header">
+                    Week of January 6th
+                </div>
+                <div class="card-content">
+                    <div class="date">Published: January 8, 2025</div>
+                    <div class="highlights">
+                        <h3>Highlights:</h3>
+                        <ul>
+                            <li>Senior Dues Reminder</li>
+                            <li>Fashion Show - March 9th</li>
+                            <li>Baby Photos Due March 31st</li>
+                            <li>Important Dates & Updates</li>
+                        </ul>
+                    </div>
+                    <a href="week6.html" class="read-more">Read Newsletter</a>
+                </div>
+            </div>
+
+            <!-- Template for future newsletters -->
+            <!-- Copy this structure for each new newsletter
+            <div class="newsletter-card">
+                <div class="card-header">
+                    Week of [Date]
+                </div>
+                <div class="card-content">
+                    <div class="date">Published: [Publication Date]</div>
+                    <div class="highlights">
+                        <h3>Highlights:</h3>
+                        <ul>
+                            <li>[Highlight 1]</li>
+                            <li>[Highlight 2]</li>
+                            <li>[Highlight 3]</li>
+                        </ul>
+                    </div>
+                    <a href="[link-to-newsletter].html" class="read-more">Read Newsletter</a>
+                </div>
+            </div>
+            -->
+
+        </div>
+    </div>
+</body>
+</html>
